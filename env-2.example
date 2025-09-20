@@ -1,0 +1,21 @@
+# Market Data API Keys
+# Add your API keys below and rename this file to .env.local
+
+# Polygon API (Premium) - Real-time data and options chains
+NEXT_PUBLIC_POLYGON_API_KEY=your_polygon_api_key_here
+POLYGON_API_KEY=your_polygon_api_key_here
+
+# Financial Modeling Prep - Comprehensive market data
+NEXT_PUBLIC_FMP_API_KEY=your_fmp_api_key_here
+FMP_API_KEY=your_fmp_api_key_here
+
+# Alpha Vantage (Free) - Basic quotes and historical data
+NEXT_PUBLIC_ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key_here
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key_here
+
+# Twelve Data (Free) - Real-time quotes and time series
+NEXT_PUBLIC_TWELVE_DATA_API_KEY=your_twelve_data_api_key_here
+TWELVE_DATA_API_KEY=your_twelve_data_api_key_here
+
+# Optional: Vercel Analytics
+NEXT_PUBLIC_VERCEL_ANALYTICS=true

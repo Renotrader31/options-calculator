@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "name": "options-profit-calculator",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_POLYGON_API_KEY": "@polygon_api_key",
+    "NEXT_PUBLIC_FMP_API_KEY": "@fmp_api_key", 
+    "NEXT_PUBLIC_ALPHA_VANTAGE_API_KEY": "@alpha_vantage_api_key",
+    "NEXT_PUBLIC_TWELVE_DATA_API_KEY": "@twelve_data_api_key"
+  },
+  "functions": {
+    "pages/api/**/*.js": {
+      "maxDuration": 30
+    }
+  }
+}
